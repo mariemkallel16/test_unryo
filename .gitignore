@@ -11,7 +11,7 @@ __pycache__/
 node_modules/
 dist/
 
-# .NET / NuGet (ton problème actuel)
+# .NET / NuGet
 .nuget/
 packages/
 bin/
