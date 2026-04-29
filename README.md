@@ -8,16 +8,12 @@ Ce projet implémente une application fullstack composée de :
 
 L’objectif est de fournir une solution simple, fonctionnelle et reproductible, conformément aux contraintes du test.
 
----
-
 ## Fonctionnalités
 
 - Créer un user  
 - Lister les users
 - Modifier un user
 - Supprimer un user
-
----
 
 ## Technologies utilisées
 
@@ -41,8 +37,6 @@ L’objectif est de fournir une solution simple, fonctionnelle et reproductible,
   - Permet de garantir la reproductibilité du projet.
   - Simplifie le déploiement.
 
----
-
 ## Architecture
 
 ```text
@@ -59,8 +53,6 @@ Base de données (SQLite)
 ## Lancement du projet
 
 Le projet peut être lancé de deux manières : avec Docker ou en local.
-
----
 
 ### Option 1 — Avec Docker
 
@@ -82,7 +74,7 @@ docker-compose up --build
 ```bash
 cd backend
 python -m venv venv
-venv\Scripts\activate   # Windows
+venv\Scripts\activate   # Windows (source venv/bin/activate pour mac/linux)
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
@@ -105,11 +97,6 @@ PUT    /users/{id}      -> modifier un usager
 DELETE /users/{id}      -> supprimer un usager
 ```
 
-### Documentation interactive
-http://localhost:8000/docs
-
----
-
 ## Tests
 
 Des tests unitaires ont été implémentés côté backend avec **pytest**.
@@ -125,7 +112,6 @@ pytest
 - La récupération des usagers
 - La création d'un usager
 
----
 
 ## Temps de réalisation
 
@@ -137,8 +123,6 @@ Afin de respecter le temps imparti, certains choix ont été faits pour simplifi
 - Utilisation de SQLite pour éviter toute configuration externe
 
 Le développement complet (backend, frontend, Docker et documentation) a été réalisé en environ 3h.
-
----
 
 ## Points faibles de la solution
 
@@ -161,8 +145,6 @@ Cette implémentation est volontairement simplifiée et présente certaines limi
 - Mettre en place CI/CD
 - Ajouter monitoring et logs
 
----
-
 ## Failles et vulnérabilités 
 
 **Points faibles :**
@@ -173,8 +155,6 @@ Cette implémentation est volontairement simplifiée et présente certaines limi
 - Restreindre CORS
 - Ajouter authentification
 - Utiliser HTTPS
-
----
 
 ## Déploiement
 
