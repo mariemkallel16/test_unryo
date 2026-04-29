@@ -1,0 +1,28 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Database
+*.db
+
+# Node
+node_modules/
+dist/
+
+# .NET / NuGet (ton problème actuel)
+.nuget/
+packages/
+bin/
+obj/
+
+# Env
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
