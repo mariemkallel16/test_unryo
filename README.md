@@ -61,11 +61,18 @@ Cette option permet de lancer l’ensemble du projet dans un environnement propr
 ```bash
 docker-compose up --build
 ```
+
+Petit update : j'ai fait un test sur Linux et il se peut qu'il y ait une erreur de permission. Si c'est le cas, faites :
+
+```bash
+sudo docker-compose up --build
+```
+
 ### Accès
 
 - Frontend : http://localhost:5173  
 - Backend : http://localhost:8000  
-- Documentation API : http://localhost:8000/docs  
+- Documentation API : http://localhost:8000/docs (il faut ajouter le /docs pour explorer la documentation de l'API)
 
 ### Option 2 — En local
 
@@ -133,8 +140,6 @@ Cette implémentation est volontairement simplifiée et présente certaines limi
 - Interface basique
 - Gestion des erreurs limitée
 - SQLite non adapté à la production
-
----
 
 ## Améliorations futures
 
